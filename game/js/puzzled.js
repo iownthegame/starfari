@@ -264,7 +264,7 @@
               console.log(imageData)
               let puzzleDone = $('.puzzle-done')
               puzzleDone.find('.obj-name').text(imageData.name)
-              puzzleDone.find('.obj-date').text(`Taken on: ${imageData.date}`)
+              puzzleDone.find('.obj-date').text(`Taken Date / Release Date: ${imageData.date}`)
               puzzleDone.find('.obj-taken').text(`Taken by: ${imageData.photographer}`)
               puzzleDone.find('.obj-sup').text(imageData.supplement)
               puzzleDone.find('.obj-more').html(`For more information, please go to <a href="${imageData.more}" target="_blank">${imageData.more}</a>`)
@@ -422,14 +422,14 @@
     $('.ready').show()
 
     let cnt = 0;
-    let countdown = 5;
+    let countdown = 3;
     let interval = setInterval(function() {
       $('.ready .ready-text').text("")
       if (countdown > cnt) {
         $('.ready .text').text(countdown - cnt)
       }
       if (countdown === cnt) {
-        $('.ready .text').text("Let's Go!")
+        $('.ready .text').text("Go!")
       }
       cnt += 1
       if (cnt === countdown + 2) {
