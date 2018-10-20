@@ -146,10 +146,11 @@
   window.addEventListener("message", receiveMessage, false);
   function receiveMessage(event)
   {
-    // console.log('receive', event)
-    let command = event.data.command;
+    console.log('receive', event)
+    let data = JSON.parse(event.data)
+    let command = data.command;
     if (command === 'update') {
-      let theme = event.data.value;
+      let theme = data.value;
       updateThemeItem(theme)
     }
     if (command === 'menu') {
@@ -159,7 +160,7 @@
       window.location.reload();
     }
     if (command === 'next') {
-      let value = event.data.value;
+      let value = data.value;
       console.log('next', value)
       playTheme(value, 'puzzle')
     }
