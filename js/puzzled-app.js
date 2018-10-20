@@ -148,6 +148,10 @@
   {
     // console.log('receive', event)
     let command = event.data.command;
+    if (command === 'update') {
+      let theme = event.data.value;
+      updateThemeItem(theme)
+    }
     if (command === 'menu') {
       window.location = '/menu'
     }
@@ -157,7 +161,7 @@
     if (command === 'next') {
       let value = event.data.value;
       console.log('next', value)
-      playTheme(value)
+      playTheme(value, 'puzzle')
     }
   }
 

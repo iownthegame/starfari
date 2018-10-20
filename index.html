@@ -1,12 +1,12 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>STARfari</title>
+        <title>STARFARI</title>
         <meta name="description" content="Hello, Universe!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
       
         <!-- Social media -->
-        <meta property="og:title" content="STARfari">
+        <meta property="og:title" content="STARFARI">
         <!-- <meta property="og:description" content="Hello, Universe!"> -->
         <!-- <link rel="icon" type="image/png" href="favicon.ico"> -->
       
@@ -75,16 +75,19 @@
             }
             .skip {
                 position: absolute;
-                bottom: 30;
-                right: 30;
+                bottom: 10px;
+                right: 10px;
                 width: 30px;
-                background: white;
+                /* background: white; */
                 cursor: pointer;
                 padding: 5 20;
                 border-radius: 5px;
+                background: rgba(0, 0, 0, 0.5);
+                color: white;
             }
             .skip:hover {
-                background: wheat;
+                /* background: wheat; */
+                color: wheat;
             }
         </style>
     </head>
@@ -96,13 +99,13 @@
         </div>
         <div id="video-container" class="video" hidden>
             <video id="video" style="width: 100%;">
-                <source src="video/test.mp4" type="video/mp4">
+                <source src="video/opening.mp4" type="video/mp4">
             </video>
             <div id="skip" class="skip" onclick="skip()">Skip</div>
         </div>
         <div id="footer" class="footer">
             <div>Copyright Notice</div>
-            <p>The intellectual property rights of STARfari are owned by Centauri dreams or legally approved by the authors. Integral components in this game, including images, sounds, and videos, are credited to STScI which claims no copyrights to Hubble publicly released materials and may be freely used as in the public domain.</p>
+            <p>The intellectual property rights of STARFARI are owned by Centauri dreams or legally approved by the authors. Integral components in this game, including images, sounds, and videos, are credited to STScI which claims no copyrights to Hubble publicly released materials and may be freely used as in the public domain.</p>
         </div>
         <script>
             function playVideo() {
@@ -115,7 +118,7 @@
                 document.getElementById("demo").style.display = "none";
                 document.getElementById("footer").style.display = "none";
                 video.onended = function(e) {
-                    conosle.log('video end')
+                    console.log('video end')
                     window.location = "/menu";  
                 };
             }

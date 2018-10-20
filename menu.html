@@ -1,12 +1,12 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>STARfari</title>
+        <title>STARFARI</title>
         <meta name="description" content="Hello, Universe!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
       
         <!-- Social media -->
-        <meta property="og:title" content="STARfari">
+        <meta property="og:title" content="STARFARI">
         <!-- <meta property="og:description" content="Hello, Universe!"> -->
         <!-- <link rel="icon" type="image/png" href="favicon.ico"> -->
       
@@ -77,7 +77,7 @@
               cursor: not-allowed;
             }
             .theme:hover {
-              background: pink;
+              background: yellowgreen;
             }
             .theme-disabled:hover {
               background: gray;
@@ -86,27 +86,49 @@
     </head>
     <body>
         <div class="header">
-          STARfari
+          STARFARI
         </div>
         <div class="container">
             <div class="description">
               Choose your adventure.
             </div>
             <div class="themes">
-                <div id="theme1" class="theme" onclick="playTheme(1)">
+                <div id="theme1" class="theme" onclick="playTheme(1, 'menu')">
                   <div>Rescuing the Private</div>
-                  <div>1/5</div>
+                  <div class="progress"></div>
                 </div>
-                <div id="theme2" class="theme theme" onclick="playTheme(2)">
+                <div id="theme2" class="theme theme" onclick="playTheme(2, 'menu')">
                   <div>Seeing the Invisible</div>
-                  <div>0/5</div>
+                  <div class="progress"></div>
                 </div>
-                <div id="theme3" class="theme theme-disabled" onclick="playTheme(3)">
-                  <div>Hitchhiking to the Infinity</div>
-                  <div>0/5</div>
+                <div id="theme3" class="theme theme" onclick="playTheme(3, 'menu')">
+                  <div>Hitchhiking to the Infinity Galaxy</div>
+                  <div class="progress"></div>
                 </div>
             </div>
         </div>
         <script src="js/theme.js"></script>
+        <script>
+          for (let i = 0; i < 3; i++) {
+            let themeKey = (i+1).toString()
+            let theme = document.getElementById("theme"+themeKey);
+            let images = imageSets[themeKey]
+            let index = localStorage.getItem(`theme${themeKey}`)
+            if (index === null) {
+              index = -1
+            } else {
+              index = parseInt(index)
+            }
+            let progress = null
+            if (index === -1) {
+              progress = 0
+            } else {
+              progress = index
+            }
+            console.log(`theme ${themeKey}`)
+            console.log(`progress ${progress}`)
+            theme.getElementsByClassName("progress")[0].innerHTML = `${progress}/${images.length}`
+          }
+        </script>
     </body>
 </html>
