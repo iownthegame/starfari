@@ -88,18 +88,18 @@ function playTheme(theme, action) {
           document.getElementById("header").style.display = "none";
           video.onended = function(e) {
               console.log('video end')
-              window.location = "/menu";  
+              window.location = "menu";
           };
         }
         else {
           // game over, go back to menu
-          window.location = `/menu`
+          window.location = `menu`;
         }
       } else {
         let image = items[Math.floor(Math.random()*items.length)];
-        let imageUrl = `/img/theme${theme}/${image}`
+        let imageUrl = `img/theme${theme}/${image}`
         console.log(imageUrl)
-        window.location = `/puzzle?img=${imageUrl}&theme=${theme}`
+        window.location = `puzzle?img=${imageUrl}&theme=${theme}`
       }
       return
     }
@@ -108,7 +108,7 @@ function playTheme(theme, action) {
     localStorage.setItem(themeKey, newIndex)
     console.log(`set ${themeKey} index ${newIndex}`)
     // console.log(image)
-    let imageUrl = `/img/theme${theme}/${image}`
+    let imageUrl = `img/theme${theme}/${image}`
     console.log(imageUrl)
-    window.location = `/puzzle?img=${imageUrl}&theme=${theme}`
+    window.location = `puzzle?img=${imageUrl}&theme=${theme}`
 }

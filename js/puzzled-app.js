@@ -153,7 +153,7 @@
       updateThemeItem(theme)
     }
     if (command === 'menu') {
-      window.location = '/menu'
+      window.location = 'menu'
     }
     if (command === 'reload') {
       window.location.reload();
