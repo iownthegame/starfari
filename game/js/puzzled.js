@@ -270,7 +270,7 @@
               puzzleDone.find('.obj-more').html(`For more information, please go to <a href="${imageData.more}" target="_blank">${imageData.more}</a>`)
               puzzleDone.css('display', 'inline-block')
               // update localStorage
-              parent.postMessage({'command': 'update', 'value': settings.theme})
+              window.parent.postMessage({'command': 'update', 'value': settings.theme})
               
               $('.puzzle-item').addClass('game-complete');
               $('<span />')
@@ -387,15 +387,15 @@
   }
 
   var next = function () {
-    parent.postMessage({'command': 'next', 'value': settings.theme})
+    window.parent.postMessage({'command': 'next', 'value': settings.theme})
   }
 
   var replay = function() {
-    parent.postMessage({'command': 'reload'})
+    window.parent.postMessage({'command': 'reload'})
   }
 
   var menu = function() {
-    parent.postMessage({'command': 'menu'})
+    window.parent.postMessage({'command': 'menu'})
   }
 
   window.changeLevel = changeLevel;
