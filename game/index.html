@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>STARfari</title>
+  <meta name="description" content="Hello, Universe!">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Social media -->
+  <meta property="og:title" content="STARfari">
+  <!-- <meta property="og:description" content="Hello, Universe!"> -->
+  <!-- <link rel="icon" type="image/png" href="favicon.ico"> -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .game-control {
+      margin: 10px;
+      display: none;
+      align-items: center;
+    }
+    .levels {
+      display: flex;
+      align-items: center;
+    }
+    .level {
+      margin: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      background: black;
+      color: white;
+      padding: 5px;
+      width: 70px;
+      text-align: center;
+    }
+    .level:hover {
+      background: #444;
+    }
+    .timer {
+      margin-left: 30px;
+    }
+    .ready {
+      width: 80%;
+      height: 80%;
+      background: whitesmoke;
+      color: #444;
+      margin: auto;
+      position: absolute;
+      top: 0; left: 0; bottom: 0; right: 0;
+      border-radius: 5px;
+      text-align: center;
+      padding: 30px 0;
+    }
+    .ready div {
+      margin-bottom: 20px;
+      font-size: 40px;
+    }
+    .ready img {
+      width: 450px;
+      height: 450px;
+      object-fit: cover;
+    }
+    .puzzle-done {
+      display: none;
+      width: 600px;
+      margin-left: 30px;
+      vertical-align: top;
+    }
+    .puzzle-done .obj-name {
+      font-size: 32px;
+      font-weight: bold;
+    }
+    .puzzle-done .obj {
+      margin: 10px 0;
+    }
+    .puzzle-done .btn-panel {
+      display: flex;
+      align-items: center;
+    }
+    .puzzle-done .btn-panel div {
+      background: blue;
+      border-radius: 5px;
+      padding: 5px 10px;
+      width: 60px;
+      color: white;
+      cursor: pointer;
+      margin: 20px;
+      text-align: center;
+    }
+    .puzzle-done .btn-panel div:hover {
+      background: orange;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="ready" hidden>
+    <div><span class="ready-text">Ready! </span><span class="text"></span></div>
+    <img />
+  </div>
+  <div class="game">
+    <div class="puzzle-done">
+      <div class="obj obj-name"></div>
+      <div class="obj obj-date"></div>
+      <div class="obj obj-taken"></div>
+      <div class="obj obj-sup"></div>
+      <div class="obj obj-more"></div>
+      <div class="btn-panel">
+        <div class="next" onclick="next()">Next</div>
+        <div class="replay" onclick="replay()">Replay</div>
+        <div class="menu" onclick="menu()">Menu</div>
+      </div>
+
+    </div>
+    <div class="game-control">
+      <div class="levels">
+        <div class="level" onclick="changeLevel('easy')">Easy</div>
+        <div class="level" onclick="changeLevel('medium')">Medium</div>
+        <div class="level" onclick="changeLevel('hard')">Hard</div>
+      </div>
+      <div id="timer" class="timer">
+        00:00:00
+      </div>
+    </div>    
+  </div>
+
+  <footer id="scripts">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script>window.jQuery.ui || document.write('<script src="js/vendor/jquery-ui-1.10.4.custom.min.js"><\/script>')</script>
+    <script src="js/vendor/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/puzzled.js"></script>
+  </footer>
+
+</body>
+</html>

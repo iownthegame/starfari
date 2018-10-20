@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>STARfari</title>
+        <meta name="description" content="Hello, Universe!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+        <!-- Social media -->
+        <meta property="og:title" content="STARfari">
+        <!-- <meta property="og:description" content="Hello, Universe!"> -->
+        <!-- <link rel="icon" type="image/png" href="favicon.ico"> -->
+      
+        <style>
+            @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+            body {
+                /* background-image: url("img/telescope.jpg"); */
+                background-color: black;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 0;
+                padding: 0;
+                font-family: 'Noto Sans TC';
+                overflow: hidden;
+            }
+            .header {
+                z-index: 1;
+                width: 100%;
+                height: 40px;
+                position: absolute;
+                top: 0;
+                background: blanchedalmond;
+                /* background: rgba(0, 0, 0, 0.7); */
+                color: black;
+                text-align: center;
+                line-height: 40px;
+                padding: 10 10 5 10;
+                vertical-align: middle;
+                font-size: 20px;
+            }
+            .container {
+                position: absolute;
+                margin: auto;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                flex-flow: column;
+            }
+            .description {
+              height: 50px;
+              color: white;
+              margin-bottom: 30px;
+            }
+            .themes {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .theme {
+              width: 300px;
+              height: 300px;
+              background: wheat;
+              border-radius: 5px;
+              margin: 0 30px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-flow: column;
+              cursor: pointer;
+            }
+            .theme-disabled {
+              background: gray;
+              cursor: not-allowed;
+            }
+            .theme:hover {
+              background: pink;
+            }
+            .theme-disabled:hover {
+              background: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+          STARfari
+        </div>
+        <div class="container">
+            <div class="description">
+              Choose your adventure.
+            </div>
+            <div class="themes">
+                <div id="theme1" class="theme" onclick="playTheme(1)">
+                  <div>Rescuing the Private</div>
+                  <div>1/5</div>
+                </div>
+                <div id="theme2" class="theme theme" onclick="playTheme(2)">
+                  <div>Seeing the Invisible</div>
+                  <div>0/5</div>
+                </div>
+                <div id="theme3" class="theme theme-disabled" onclick="playTheme(3)">
+                  <div>Hitchhiking to the Infinity</div>
+                  <div>0/5</div>
+                </div>
+            </div>
+        </div>
+        <script src="js/theme.js"></script>
+    </body>
+</html>
