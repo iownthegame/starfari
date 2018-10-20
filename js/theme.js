@@ -77,6 +77,19 @@ function playTheme(theme, action) {
         if (parseInt(theme) === 1) {
           console.log('show ending video')
           // show ending video
+
+          let videoContainer = document.getElementById("video-container");
+          videoContainer.style.display = "block";
+          let video = document.getElementById("video");
+          video.play();
+          // document.getElementById("start").style.display = "none";
+          // document.getElementById("demo").style.display = "none";
+          // document.getElementById("footer").style.display = "none";
+          document.getElementById("header").style.display = "none";
+          video.onended = function(e) {
+              console.log('video end')
+              window.location = "/menu";  
+          };
         }
         else {
           // game over, go back to menu
