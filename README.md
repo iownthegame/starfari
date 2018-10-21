@@ -51,6 +51,7 @@ STARFARI uses interactive web technology to present a jigsaw puzzle game with le
   - [jQuery](https://jquery.com/)
   - [puzzled - JS Jigsaw Puzzle](https://github.com/tsi/puzzled)
   - [STARWARS Web Font](https://fonts2u.com/starwars.font)
-  - [ ProgressBar.js](https://kimmobrunfeldt.github.io/progressbar.js/)
+  - [ProgressBar.js](https://kimmobrunfeldt.github.io/progressbar.js/)
 
-
+## COPYRIGHT NOTICE
+​The intellectual property rights of STARFARI are owned by Centauri dreams or legally approved by the authors. Integral components in this game, including images, sounds, and videos, are credited to STScI which claims no copyrights to Hubble publicly released materials and may be freely used as in the public domain.
