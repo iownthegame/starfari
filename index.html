@@ -152,6 +152,10 @@
             setTimeout(function() {
                 document.getElementById("header").getElementsByTagName("span")[0].className += "scale"
             }, 1000)
+
+            //fake, for demo only
+            localStorage.setItem("theme1", 2)
+
             function playVideo() {
                 console.log("play");
                 let videoContainer = document.getElementById("video-container");
