@@ -41,7 +41,12 @@ function updateThemeItem(theme) {
   if (index === -1) {
     newIndex = 0
   } else {
-    newIndex = index + 1
+    console.log('current index = ', index)
+    if (index === 2) { //fake, for demo only
+      newIndex = 5
+    } else {
+      newIndex = index + 1
+    }
   }
   // localStorage.removeItem(themeKey)
   if (newIndex <= items.length) {
