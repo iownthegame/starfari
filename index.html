@@ -9,6 +9,7 @@
         <meta property="og:title" content="STARFARI">
         <!-- <meta property="og:description" content="Hello, Universe!"> -->
         <!-- <link rel="icon" type="image/png" href="favicon.ico"> -->
+        <link rel="stylesheet" href="starwars/stylesheet.css">
       
         <style>
             @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
@@ -109,10 +110,30 @@
                 align-items: center;
                 justify-content: center;
             }
+            .header {
+                width: 100%;
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: 25%;
+            }
+            .header span {
+                font-size: 54px;
+                font-family: "STARWARS";
+                color: rgba(255, 255, 255, 0.8);
+            }
+            .header span.scale {
+                transform: scale(2.0);
+                transition: ease 5s;
+            }
         </style>
     </head>
     <body>
         <div class="shadow"></div>
+        <div class="header" id="header">
+            <span>STARFARI</span>
+        </div>
         <div class="container">
             <div id="start" class="start" onclick="playVideo()">Start Journey</div>
             <!-- <div id="demo" class="demo">How to Play</div> -->
@@ -128,6 +149,9 @@
             <p>The intellectual property rights of STARFARI are owned by Centauri dreams or legally approved by the authors. Integral components in this game, including images, sounds, and videos, are credited to STScI which claims no copyrights to Hubble publicly released materials and may be freely used as in the public domain.</p>
         </div>
         <script>
+            setTimeout(function() {
+                document.getElementById("header").getElementsByTagName("span")[0].className += "scale"
+            }, 1000)
             function playVideo() {
                 console.log("play");
                 let videoContainer = document.getElementById("video-container");
