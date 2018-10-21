@@ -37,7 +37,7 @@
       'name': 'Earth',
       'date': 'December 7, 1972',
       'photographer': 'Apollo 17',
-      'supplement': "View of the Earth as seen by the Apollo 17 crew traveling toward the moon. This translunar coast photograph extends from the Mediterranean Sea area to the Antarctica south polar ice cap. This is the first time the Apollo trajectory made it possible to photograph the south polar ice cap. Note the heavy cloud cover in the Southern Hemisphere. Almost the entire coastline of Africa is clearly visible. The Arabian Peninsula can be seen at the northeastern edge of Africa. The large island off the east coast of Africa is the Republic of Madagascar. The Asian mainland is on the horizon toward the northeast.",
+      'supplement': "View of the Earth as seen by the Apollo 17 crew traveling toward the moon. This translunar coast photograph extends from the Mediterranean Sea area to the Antarctica south polar ice cap. This is the first time the Apollo trajectory made it possible to photograph the south polar ice cap. Note the heavy cloud cover in the Southern Hemisphere. Almost the entire coastline of Africa is clearly visible. The Arabian Peninsula can be seen at the northeastern edge of Africa. The large island off the east coast of Africa is the Republic of Madagascar. The Asian mainland is on the horizon toward the northeast. Note! The Hubble Space Telescope doesn't take pictures of the Earth because it is relatively close to the planet, and orbits the Earth at the speed about 8 km/s. With this super fast movement the telescope would only take very bad pictures of our lovely home.",
       'more': 'https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?mission=AS17&roll=148&frame=22727',
       'theme': 1,
     },

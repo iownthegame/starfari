@@ -100,10 +100,12 @@
               /* margin-bottom: 10px; */
             }
             .theme .progress {
-              color: #bbb;
+              /* color: red; */
               font-size: 20px;
               position: absolute;
               bottom: 30px;
+              width: 200px;
+              height: 4px;
             }
             .theme-disabled {
               background: gray;
@@ -141,7 +143,7 @@
             </div>
             <div class="themes">
                 <div id="theme1" class="theme" onclick="playTheme(1, 'menu')">
-                  <div class="title">Rescuing the Private</div>
+                  <div class="title">Rescuing the Private<br/> - A Tribute to the Hollywood</div>
                   <div class="progress"></div>
                 </div>
                 <div id="theme2" class="theme theme" onclick="playTheme(2, 'menu')">
@@ -155,6 +157,7 @@
             </div>
         </div>
         <script src="js/theme.js?20181020a"></script>
+        <script src="js/progressbar.js"></script>
         <script>
           for (let i = 0; i < 3; i++) {
             let themeKey = (i+1).toString()
@@ -174,7 +177,22 @@
             }
             console.log(`theme ${themeKey}`)
             console.log(`progress ${progress}`)
-            theme.getElementsByClassName("progress")[0].innerHTML = `${progress}/${images.length}`
+            let progressPercent = progress * 1.0 / images.length
+            let container = theme.getElementsByClassName("progress")[0]
+            var bar = new ProgressBar.Line(container, {
+              strokeWidth: 4,
+              easing: 'easeInOut',
+              duration: 1400,
+              // color: '#FFEA82',
+              color: '#36bfa0',
+              // trailColor: 'rgba(0, 0, 0, 1)',
+              trailColor: 'rgba(255, 255, 255, 0.3)',
+              trailWidth: 2,
+              svgStyle: {width: '100%', height: '100%'}
+            });
+            bar.animate(progressPercent)
+            console.log(progressPercent)
+            // theme.getElementsByClassName("progress")[0].innerHTML = `${progress}/${images.length}`
           }
           function index() {
             window.location = "index";

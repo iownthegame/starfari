@@ -79,16 +79,17 @@ function playTheme(theme, action) {
           // show ending video
 
           let videoContainer = document.getElementById("video-container");
-          videoContainer.style.display = "block";
+          videoContainer.style.display = "flex";
           let video = document.getElementById("video");
           video.play();
+          video.muted = false;
           // document.getElementById("start").style.display = "none";
           // document.getElementById("demo").style.display = "none";
           // document.getElementById("footer").style.display = "none";
           document.getElementById("header").style.display = "none";
           video.onended = function(e) {
               console.log('video end')
-              window.location = "menu";
+              fadeOut(videoContainer)
           };
         }
         else {
@@ -111,4 +112,18 @@ function playTheme(theme, action) {
     let imageUrl = `img/theme${theme}/${image}`
     console.log(imageUrl)
     window.location = `puzzle?img=${imageUrl}&theme=${theme}`
+}
+
+function fadeOut(fadeTarget) {
+  var fadeEffect = setInterval(function () {
+      if (!fadeTarget.style.opacity) {
+          fadeTarget.style.opacity = 1;
+      }
+      if (fadeTarget.style.opacity > 0) {
+          fadeTarget.style.opacity -= 0.1;
+      } else {
+          clearInterval(fadeEffect);
+          window.location = "menu";
+      }
+  }, 200);
 }
