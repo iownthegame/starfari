@@ -2,12 +2,12 @@
 
 ### STARFARI is a puzzle game based on Hubble imagery, to give the audience a view on the Universe and educate while advancing through levels.
 
-
-## [PLAY NOW](https://iownthegame.github.io/starfari/)
+### [PLAY NOW](https://iownthegame.github.io/starfari/)
 
 ## THE CHALLENGE
 
-### `On the Shoulders of Giants` Create a game using images from the Hubble Space Telescope as integral components!
+### `On the Shoulders of Giants`
+#### Create a game using images from the Hubble Space Telescope as integral components!
 
 ## OUR SOLUTION
 
@@ -27,7 +27,7 @@ We integrate Hubble’s images and videos into our puzzle game to popularize the
 
 ## WHY DID WE CHOOSE THIS TOPIC?
 
-### We care about science education. Most students around the world face competitive study which makes them hard to relax while learning. Our team is dedicated to achieve the balance between heavy academic tasks and mental health.
+ We care about science education. Most students around the world face competitive study which makes them hard to relax while learning. Our team is dedicated to achieve the balance between heavy academic tasks and mental health.
 
 
 ## WHAT PROBLEMS DO WE SOLVE?
@@ -36,7 +36,7 @@ We integrate Hubble’s images and videos into our puzzle game to popularize the
 - Popularize the findings of Hubble.
 
 ## WHAT TECHNOLOGIES DO WE USE?
-### STARFARI uses interactive web technology to present a jigsaw puzzle game with levels. A device (computer, phone, or tablet) capable of browsing web pages is required.
+STARFARI uses interactive web technology to present a jigsaw puzzle game with levels. A device (computer, phone, or tablet) capable of browsing web pages is required.
 
 ## SOURCE CODE
 ### [https://github.com/iownthegame/starfari](https://github.com/iownthegame/starfari)
