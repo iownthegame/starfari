@@ -41,6 +41,9 @@ STARFARI uses interactive web technology to present a jigsaw puzzle game with le
 ## SOURCE CODE
 ### [https://github.com/iownthegame/starfari](https://github.com/iownthegame/starfari)
 
+## SLIDES
+### [https://drive.google.com/open?id=1Aa9BpuekxuSwSwYJHvoC-2CnY8hzN6yE](https://drive.google.com/open?id=1Aa9BpuekxuSwSwYJHvoC-2CnY8hzN6yE)
+
 ## RESOURCES USED
 - Hubble Multimedia
   - [HubbleSite: Images](http://hubblesite.org/images/gallery)
