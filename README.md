@@ -50,6 +50,8 @@ STARFARI uses interactive web technology to present a jigsaw puzzle game with le
 - Video and Audio Materials
   - [Interstellar](https://www.imdb.com/title/tt0816692/)
   - [Two Steps From Hell](https://www.youtube.com/channel/UC3swwxiALG5c0Tvom83tPGg)
+- Slides Materials
+  - [Microsoft 3D PowerPoint presentation (Hubble Telescope model)](https://templates.office.com/en-us/3D-PowerPoint-presentation-Hubble-Telescope-model-TM16401558)
 - Source Code
   - [jQuery](https://jquery.com/)
   - [puzzled - JS Jigsaw Puzzle](https://github.com/tsi/puzzled)
