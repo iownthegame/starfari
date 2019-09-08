@@ -8,6 +8,10 @@
 
 ### `On the Shoulders of Giants`
 #### Create a game using images from the Hubble Space Telescope as integral components!
+##### We got [Innovation Award](https://2018.spaceappschallenge.org/locations/taipei/) (4th place) in NASA Space Apps Challenge 2018!!!
+##### 👉👉👉 [Team "Centauri Dreams" and Project "STARFARI"](https://2018.spaceappschallenge.org/challenges/universe-beauty-and-wonder/shoulders-giants/teams/centauri-dreams/project)
+
+
 
 ## OUR SOLUTION
 
